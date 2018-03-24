@@ -1,3 +1,3 @@
 # JavaScript Total
 
-Um curso completo de JavaScript, incluindo os recursos mais modernos da linguagem
+Código usado na vídeo-aula 2 do curso JavaScript Total.
