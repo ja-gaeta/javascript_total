@@ -1,1 +1,1 @@
-// Academia para treino
+// Academia para treino de JS
