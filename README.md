@@ -3,7 +3,8 @@
 Código usado na vídeo-aula 4 do curso JavaScript Total.
 
 * Variáveis
-
+* var
+* Hoisting
 
 ## Links:
 
