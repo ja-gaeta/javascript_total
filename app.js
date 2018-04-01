@@ -1,41 +1,95 @@
-// Conjunto de Caracteres UTF-16
+// Variáveis em JavaScript
 
-var e = "𝑒"; // 𝑒 é um caracter com 17-bit (codepoint 0x1d452)
-var p = "π"; // π é um caracter com 16-bit (codepoint 0x03x0)
+var primeiraVariavel = 1;
 
-console.log(p.length);  // 1: π consiste de 1 elemento de 16-bit
-console.log(e.length);  // 2: 𝑒 tem dois valores de 16-bit: "\ud835\udc52"
+/* Tipos de Dados:
 
-// Sequências de Escape
-
-console.log("caf\u00e9");  // saída: "café"
-
-// Literais (literals)
-
-12                   // o número doze
-1.2                  // o número 1,2 (um inteiro e dois décimos)
-"Olá mundão velho!"  // uma cadeia (string) de texto, usando aspas duplas
-'Oi'                 // outra string, usando aspas simples
-true                 // um valor booleano (verdadeiro)
-false                // o outro valor boleando (falso)
-// /javascript/g        // uma expressão regular (regular expression)
-null                 // ausência de um objeto
-
-// Identificadores (nomes)
-
-/*
-    - Começar com uma letra, sublinha (_), cifrão ($)
-    - Demais podem ser letras, dígitos, sublinhas ou cifrões
-
-    Ex.:
-            i                   // uso em contadores e loops
-            minhaVariavel       // forma preferida (camel case)
-            minha_variavel      // alternativa válida, menos usada
-            v21                 // evitar abreviações
-            _simulacro          // evitar nas designações comuns
-            $str                // evitar, exceto em jQuery
-            canção              // não recomendável
-
-    - Cuidado com as palavras reservadas da linguagem. (http://www.javascripter.net/faq/reserved.htm)
-
+Null - Explicitamente definida como nenhum valor
+Undefined - Indeterminado
+Boolean - true ou false (verdadeiro ou falso)
+String - Coleção imutável com zero ou mais caracteres Unicode
+Number - Pode ser usado em operações matemáticas
+Object - Coleção ordenada de pares contendo nome/valor
 */
+
+// Números
+var borboleta = 13;
+var pi = 3.14;
+var infinito = Infinity;
+var nanNaniNana = NaN;
+
+// console.log(borboleta);
+// console.log(pi);
+// console.log(infinito);
+// console.log(nanNaniNana);
+
+// console.log(typeof(borboleta));
+// console.log(typeof(pi));
+// console.log(typeof(infinito));
+// console.log(typeof(nanNaniNana));
+
+// Strings
+var blaBlaBla = 'bla';
+var vazia = '';
+var numeroString = '1';
+var aspasDuplas = "Aspas Duplas";
+
+// console.log(blaBlaBla);
+// console.log(vazia);
+// console.log(numeroString);
+// console.log(aspasDuplas);
+
+// console.log(typeof(blaBlaBla));
+// console.log(typeof(vazia));
+// console.log(typeof(numeroString));
+// console.log(typeof(aspasDuplas));
+
+// Booleans
+
+var verdadeiro = true;
+var falso = false;
+
+// console.log(verdadeiro);
+// console.log(falso);
+// console.log(typeof(verdadeiro));
+// console.log(typeof(falso));
+
+// Undefined
+
+var declaradaUndefined = undefined;
+var nascidaIndefinida;
+
+// console.log(declaradaUndefined);
+// console.log(nascidaIndefinida);
+// console.log(typeof(declaradaUndefined));
+// console.log(typeof(nascidaIndefinida));
+
+// Objects
+var umObjeto = { 
+  nome: "Mesa",
+  tamanho: 'grande'
+};
+var objetoVoador = { borboleta: 13 };
+var hoje = new Date();
+
+// console.log(umObjeto.tamanho);
+// console.log(objetoVoador);
+// console.log(hoje);
+// console.log(typeof(umObjeto));
+// console.log(typeof(objetoVoador));
+// console.log(typeof(hoje));
+
+var primeiraVariavel;
+// console.log(primeiraVariavel);
+
+// HOISTING
+
+numero = 2;
+var numero;
+
+console.log(numero);
+
+var x = y, y = 'A';
+console.log(x + y);
+
+var a = 0, b = 0;
