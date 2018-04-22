@@ -1,37 +1,68 @@
-// Tipos de Dados
+// ARITMÉTICA NO JAVASCRIPT
 
-// NÚMEROS
+// Operadores Básicos
 
-/*
-    - Sem distinção entre inteiros e ponto-flutuantes
-    - Números em JS são sempre ponto-flutuantes de 64-bit (formato no padrão IEEE 754)
-    - Precisão:
-        + Ponto-flutuante: 
-            * Mínimo: ±5 × 10^−324
-            * Máximo: ±1.7976931348623157 × 10^308
-        + Inteiros:
-            * Mínimo: −9007199254740992 (−2^53)
-            * Máximo: 9007199254740992 (2^53)
+// var adicao = 12 + 6; // Adição
+// var subtracao = 15 - 7.0; // Subtração
+// var multiplicacao = 9 * 3; // Multiplicação
+// var divisao = 19 / 2; // Divisão
+// var modulo = 11 % 2; // Módulo
 
-    - Algumas operações em JS usam inteiros de 32-bit (p.ex.: índices de arrays e operadores bitwise)
-*/
+// console.log(adicao);
+// console.log(subtracao);
+// console.log(multiplicacao);
+// console.log(divisao);
+// console.log(modulo);
 
-// Literais Inteiros
-// Base 10
-0
-1
-500000
+// O OBJETO MATH
 
-// Base 16
-0xff  // 15 * 16 + 15 = 255 (base 10)
-0xCAFEBABE // 3.133.065.982 (base 10)
+// 2 elevado à potência 53
+// console.log(Math.pow(2, 53));
 
-// Base 8 (evitar uso)
-0377  // 3 * 64 + 7 * 8 + 7 = 255 (Base 10)
+// Arredonda para o inteiro mais próximo
+// console.log(Math.round(0.4));
 
-// Literais Ponto-Flutuante (Números Reais)
-3.14
-3456.78
-.66666666666
-6.02e23       // 6.02 * 10^23
-1.578223E-32  // 1.578223 * 10^-32
+// Arredonda para o inteiro acima
+// console.log(Math.ceil(0.1));
+
+// Arredonda para o inteiro abaixo
+// console.log(Math.floor(0.9));
+
+// Retorna o valor absoluto de um número
+// console.log(Math.abs(-5));
+
+// Retorna o maior argumento
+// console.log(Math.max(5, 1, 9, -5));
+
+// Retorna o menor argumento
+// console.log(Math.min(5, 1, 9, -5));
+
+// Retorna número pseudo-aleatório, onde (0 <= x < 1.0)
+// console.log(Math.random());
+
+// π: circunferência / diâmetro
+// console.log(Math.PI);
+
+// e: A base do logaritmo natural
+console.log(Math.E);
+
+// Raiz quadrada de 3
+// console.log(Math.sqrt(3));
+
+// Raiz cúbica de 3
+// console.log(Math.pow(3, 1 / 3));
+
+// Trigonometria: Math.cos, Math.atan, etc.
+// console.log(Math.atan(0));
+
+// Logaritmo natural de 10
+// console.log(Math.log(10));
+
+// Logaritmo na base 10 de 100
+// console.log(Math.log(100) / Math.LN10);
+
+// Logaritmo na base 2 de 512
+// console.log(Math.log(512) / Math.LN2);
+
+// O cubo de Math.E
+console.log(Math.exp(3));
