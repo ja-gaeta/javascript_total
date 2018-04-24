@@ -1,6 +1,6 @@
-# JavaScript Total #6
+# JavaScript Total #7
 
-Código usado na vídeo-aula 6 do curso JavaScript Total.
+Código usado na vídeo-aula 7 do curso JavaScript Total.
 
 * Problemas de arredondamento
 * Manipulação de Texto
