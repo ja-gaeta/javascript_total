@@ -1,68 +1,41 @@
-// ARITMÉTICA NO JAVASCRIPT
+// Problemas de arredondamento no Ponto Flutuante binário
 
-// Operadores Básicos
+// var granisMussum = 60.9;
+// var precisMe = 20.3;
+// var totalGarrafis = 20.3 * 3;
 
-// var adicao = 12 + 6; // Adição
-// var subtracao = 15 - 7.0; // Subtração
-// var multiplicacao = 9 * 3; // Multiplicação
-// var divisao = 19 / 2; // Divisão
-// var modulo = 11 % 2; // Módulo
+// console.log(granisMussum === totalGarrafis);
+// console.log(totalGarrafis);
 
-// console.log(adicao);
-// console.log(subtracao);
-// console.log(multiplicacao);
-// console.log(divisao);
-// console.log(modulo);
+// var granisMussum = 6090;
+// var precisMe = 2030;
+// var totalGarrafis = 2030 * 3;
 
-// O OBJETO MATH
+// console.log(granisMussum === totalGarrafis);
 
-// 2 elevado à potência 53
-// console.log(Math.pow(2, 53));
+// Manipulação de Texto em JS
+// var1 = "Olá mundão!";
+// var2 = "Oi, pessoal.";
 
-// Arredonda para o inteiro mais próximo
-// console.log(Math.round(0.4));
+// console.log(var1);
+// console.log(var2);
+// var msg = "Salve" + " " + "galera!";
+// var msg = "Bem-vindo ao meu blog, ";
+// var nome = "Joaquim.";
 
-// Arredonda para o inteiro acima
-// console.log(Math.ceil(0.1));
+// console.log(msg + nome);
+var s = "salve o corinthians";
 
-// Arredonda para o inteiro abaixo
-// console.log(Math.floor(0.9));
-
-// Retorna o valor absoluto de um número
-// console.log(Math.abs(-5));
-
-// Retorna o maior argumento
-// console.log(Math.max(5, 1, 9, -5));
-
-// Retorna o menor argumento
-// console.log(Math.min(5, 1, 9, -5));
-
-// Retorna número pseudo-aleatório, onde (0 <= x < 1.0)
-// console.log(Math.random());
-
-// π: circunferência / diâmetro
-// console.log(Math.PI);
-
-// e: A base do logaritmo natural
-console.log(Math.E);
-
-// Raiz quadrada de 3
-// console.log(Math.sqrt(3));
-
-// Raiz cúbica de 3
-// console.log(Math.pow(3, 1 / 3));
-
-// Trigonometria: Math.cos, Math.atan, etc.
-// console.log(Math.atan(0));
-
-// Logaritmo natural de 10
-// console.log(Math.log(10));
-
-// Logaritmo na base 10 de 100
-// console.log(Math.log(100) / Math.LN10);
-
-// Logaritmo na base 2 de 512
-// console.log(Math.log(512) / Math.LN2);
-
-// O cubo de Math.E
-console.log(Math.exp(3));
+// console.log(s.length); // retorna o comprimento da string
+// console.log(s.charAt(s.length - 2));
+// console.log(s[2]); // ECMAScript 5 - array (só leitura)
+// console.log(s.substring(1, 4)); // params: inicio, fim
+// console.log(s.slice(1, 4)); // mesmo de substring
+// console.log(s.slice(-3)); // tres últimos caracteres
+// console.log(s.indexOf("o")); // posição primeiro "o"
+// console.log(s.lastIndexOf("o")); // posição último "o"
+// console.log(s.split(" ")); // separa em substrings
+// console.log(s.replace("s", "S")); // substitui caracter
+// console.log(s.replace(/s/g, "S")); // substitui todos
+console.log(s.toUpperCase());
+console.log(s);
