@@ -1,41 +1,33 @@
-// Problemas de arredondamento no Ponto Flutuante binário
+// Tipo Boolean
 
-// var granisMussum = 60.9;
-// var precisMe = 20.3;
-// var totalGarrafis = 20.3 * 3;
+// var booleano1 = true;
+// var booleano2 = false;
 
-// console.log(granisMussum === totalGarrafis);
-// console.log(totalGarrafis);
+// console.log(typeof booleano1);
+// console.log(typeof booleano2);
+// Tipo undefined
+// var var1 = undefined;
 
-// var granisMussum = 6090;
-// var precisMe = 2030;
-// var totalGarrafis = 2030 * 3;
+// Tipo null
+// var var2 = null;
 
-// console.log(granisMussum === totalGarrafis);
+// console.log(var1 === var2);
+// console.log(typeof var1);
+// console.log(typeof var2);
+// Tipo NaN (Not a Number)
 
-// Manipulação de Texto em JS
-// var1 = "Olá mundão!";
-// var2 = "Oi, pessoal.";
+var var1;
 
-// console.log(var1);
-// console.log(var2);
-// var msg = "Salve" + " " + "galera!";
-// var msg = "Bem-vindo ao meu blog, ";
-// var nome = "Joaquim.";
+var1 = 12 / "dois";
+var1 = NaN;
+var1 = 0 / 0;
+var1 = Infinity;
+var1 = Infinity / Infinity;
 
-// console.log(msg + nome);
-var s = "salve o corinthians";
+var1 = 1 / 0;
+var1 = -1 / 0;
 
-// console.log(s.length); // retorna o comprimento da string
-// console.log(s.charAt(s.length - 2));
-// console.log(s[2]); // ECMAScript 5 - array (só leitura)
-// console.log(s.substring(1, 4)); // params: inicio, fim
-// console.log(s.slice(1, 4)); // mesmo de substring
-// console.log(s.slice(-3)); // tres últimos caracteres
-// console.log(s.indexOf("o")); // posição primeiro "o"
-// console.log(s.lastIndexOf("o")); // posição último "o"
-// console.log(s.split(" ")); // separa em substrings
-// console.log(s.replace("s", "S")); // substitui caracter
-// console.log(s.replace(/s/g, "S")); // substitui todos
-console.log(s.toUpperCase());
-console.log(s);
+var1 = 1 / Infinity;
+var1 = -1 / Infinity;
+
+console.log(var1);
