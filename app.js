@@ -1,33 +1,14 @@
-// Tipo Boolean
+// console.log("Paz e saúde, galera!");
+// Arrays
 
-// var booleano1 = true;
-// var booleano2 = false;
+var arreio = [];
+var numeros = [1, 2, 3, 4];
 
-// console.log(typeof booleano1);
-// console.log(typeof booleano2);
-// Tipo undefined
-// var var1 = undefined;
-
-// Tipo null
-// var var2 = null;
-
-// console.log(var1 === var2);
-// console.log(typeof var1);
-// console.log(typeof var2);
-// Tipo NaN (Not a Number)
-
-var var1;
-
-var1 = 12 / "dois";
-var1 = NaN;
-var1 = 0 / 0;
-var1 = Infinity;
-var1 = Infinity / Infinity;
-
-var1 = 1 / 0;
-var1 = -1 / 0;
-
-var1 = 1 / Infinity;
-var1 = -1 / Infinity;
-
-console.log(var1);
+var frutas = ["Banana", "Maçã", "Uva"];
+// console.log(frutas[frutas.length - 1]);
+var mixto = [1, 2, "feijão", "com", "arroz"];
+// console.log(mixto[3]);
+var arrayComArray = [1, 2, 3, ["um", "dois", "tres"], 4];
+// console.log(arrayComArray);
+// console.log(arrayComArray[3]);
+console.log(arrayComArray[3][arrayComArray[3].length - 1]);
