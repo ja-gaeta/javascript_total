@@ -1,8 +1,8 @@
-# JavaScript Total #9
+# JavaScript Total #10
 
-Código usado na vídeo-aula 9 do curso JavaScript Total.
+Código usado na vídeo-aula 10 do curso JavaScript Total.
 
-* Arrays
+* Arrays - Segunda Parte
 
 ## Links:
 

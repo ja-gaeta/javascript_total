@@ -1,14 +1,44 @@
-// console.log("Paz e saúde, galera!");
-// Arrays
+// var umArray = [];
+// console.log(umArray);
 
-var arreio = [];
-var numeros = [1, 2, 3, 4];
+// Inicialização com "new"
+var palpite = new Array(2, 18, 20, 53, 65);
+console.log(palpite);
 
-var frutas = ["Banana", "Maçã", "Uva"];
-// console.log(frutas[frutas.length - 1]);
-var mixto = [1, 2, "feijão", "com", "arroz"];
-// console.log(mixto[3]);
-var arrayComArray = [1, 2, 3, ["um", "dois", "tres"], 4];
-// console.log(arrayComArray);
-// console.log(arrayComArray[3]);
-console.log(arrayComArray[3][arrayComArray[3].length - 1]);
+// Verificar se a variável é um array
+// var valorRetornado = Array.isArray(palpite);
+
+// Substituir elemento do array
+// palpite[1] = 10;
+
+// Encontrar o índice de um elemento
+// valorRetornado = palpite.indexOf(53);
+
+// console.log(valorRetornado);
+
+// MODIFICAÇÃO DE ARRAYS
+
+// Acrescentar elemento no final do array
+// palpite.push(60);
+// palpite[4] = 24;
+
+// // Acrescentar elemento no início do array
+// palpite.unshift(5);
+
+// // Retirar último elemento do array
+// palpite.pop();
+
+// // Retirar primeiro elemento do array
+// palpite.shift();
+
+// Retirar sequência de elementos do array
+// palpite.splice(1, 3);
+
+// Inverter sequência do array
+// palpite.reverse();
+
+// Concatenação de arrays
+var palpite2 = [7, 13, 50];
+var valorRetornado = palpite.concat(palpite2);
+
+console.log(valorRetornado);
