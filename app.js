@@ -1,46 +1,70 @@
-// Objetos - literais
+// // Literais de Objetos -- Conclusão
 
-const motoca = {
-  marca: "Yamaha",
-  modelo: "MT-07",
-  ano: 2018,
-  revendas: ["Yamais", "Indiana", "Feltrin"],
-  motor: {
-    tipo: "DOHC, 4 tempos, 8 válvulas, Refrigeração líquida",
-    cilindros: 2,
-    cilindrada: 689,
-    potenciaMax: "74,8cv (9.000rpm)"
-  },
-  getPreco: function() {
-    return "R$ 32.290,00";
-  },
-  getAno: function() {
-    return this.ano;
-  }
-};
+// const motoca = {
+//   marca: "Yamaha",
+//   modelo: "MT-07"
+// };
 
-let obj;
+// let obj = motoca;
 
-obj = motoca;
+// motoca.marca = "Triumph";
+// motoca.modelo = "Tiger 800";
 
-// Acessar um valor específico
-obj = motoca.marca;
-obj = motoca["marca"];
-obj = motoca.modelo;
-obj = motoca.ano;
-obj = motoca.revendas;
-obj = motoca.motor;
-obj = motoca.getPreco();
-obj = motoca.getAno();
+// // console.log(obj);
 
-// console.log(obj);
+// const carro = {
+//   marca: "Toyota",
+//   modelo: "Corolla"
+// };
 
-const motocas = [
-  { marca: "Yamaha", modelo: "MT-07" },
-  { marca: "Honda", modelo: "CBR-1000RR" },
-  { marca: "Harley-Davidson", modelo: "IRON-883" }
-];
+// // motoca = carro; // ERRO -- motoca e carro sáo constantes
 
-for (let i = 0; i < motocas.length; i++) {
-  console.log(motocas[i].marca);
+// carro.modelo = "Etios";
+
+// console.log(carro.modelo);
+// FAZENDO OPÇÕES COM IF...ELSE
+// ============================
+
+// if() {
+//   faça uma coisa
+// } else {
+//   faça outra coisa
+// }
+
+const n = "6";
+
+// IGUALDADE
+// ---------
+
+if (n == 6) {
+  console.log("ACERTOU");
+} else {
+  console.log("ERROU");
+}
+
+// DESIGUALDADE
+// ------------
+
+if (n != 5) {
+  console.log("ACERTOU");
+} else {
+  console.log("ERROU");
+}
+
+// IGUALDADE DE VALOR & TIPO
+// -------------------------
+
+if (n === 6) {
+  console.log("ACERTOU");
+} else {
+  console.log("ERROU");
+}
+
+// DESIGUALDADE DE VALOR & TIPO
+// ----------------------------
+
+if (n !== 6) {
+  console.log("ACERTOU");
+} else {
+  console.log("ERROU");
 }
