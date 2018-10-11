@@ -3,7 +3,7 @@
 Código usado na vídeo-aula 14 do curso JavaScript Total.
 
 - Condicional com **switch**
-  - Verificando dia da semana com **switch**
+- Verificando dia da semana com **switch**
 
 ## Links:
 
