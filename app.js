@@ -69,4 +69,4 @@ switch (new Date().getDay()) {
     break;
 }
 
-// console.log(`Hoje é ${dia}.`);
+console.log(`Hoje é ${dia}.`);
