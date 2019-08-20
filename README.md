@@ -1,4 +1,4 @@
-# JavaScript Total #15
+# JavaScript Total #16
 
 Código usado na vídeo-aula 16 do curso JavaScript Total.
 
