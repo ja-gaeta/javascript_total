@@ -1,8 +1,8 @@
 # JavaScript Total #15
 
-Código usado na vídeo-aula 15 do curso JavaScript Total.
+Código usado na vídeo-aula 16 do curso JavaScript Total.
 
-- O objeto **Date**
+- Laços e Iterações
 
 ## Links:
 
