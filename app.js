@@ -1,32 +1,53 @@
-// FUNÇÕES - FUNDAMENTOS
+// DECLARAÇÃO "FOR"
 
-function digaOla(nome = 'José', sobrenome = 'Mané') {
-  // console.log('Olá');
-  // if (typeof nome === 'undefined') { nome = 'José' }
-  // if (typeof sobrenome === 'undefined') { sobrenome = 'Mané' }
-  return "Olá " + nome + " " + sobrenome;
+// for (i = 0; i <= 10; i++) {
+//   console.log(i);
+// }
+
+// DECLARAÇÃO "WHILE"
+
+// i = 11;
+
+// while (i <= 10) {
+//   console.log(i);
+//   i++;
+// }
+
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 10)
+
+// CONTINUE & BREAK
+
+// for (let i = 0; i < 10; i++) {
+//   if (i === 5) {
+//     continue;
+//   }
+
+//   if (i === 7) {
+//     break;
+//   }
+//   console.log(i);
+// }
+
+// FOR IN...
+
+// const moto = {
+//   fabricante: 'Honda',
+//   modelo: 'SH-150i'
+// }
+
+// for (let i in moto) {
+//   // console.log(i);
+//   // console.log(moto[i]);
+//   console.log(`${i}: ${moto[i]}`);
+// }
+
+// FOR OF...
+
+const umArray = ['Honda', 'Yamaha', 'Triumph'];
+
+for (let i of umArray) {
+  console.log(i);
 }
-
-// console.log(digaOla('João', 'Silva'));
-
-// RETORNO DE EXPRESSÕES
-
-function quadrado(numero) {
-  return numero * numero;
-}
-
-// console.log(quadrado(8));
-
-
-// MÉTODOS
-
-const area = {
-  quadrado: function (lado) {
-    return (lado * lado);
-  },
-  circulo: function (raio) {
-    return (3.1415 * this.quadrado(raio));
-  }
-}
-
-console.log(area.circulo(1));
