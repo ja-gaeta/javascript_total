@@ -2,7 +2,7 @@
 
 Código usado na vídeo-aula 15 do curso JavaScript Total.
 
-- O objeto **Date**
+- Funções
 
 ## Links:
 
