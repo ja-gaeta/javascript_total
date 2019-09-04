@@ -1,17 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>JavaScript Total</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JavaScript Total</title>
-  <!-- <script src="app.js"></script> -->
-</head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">JavaScript Total</h1>
+        <h3>Propriedades do Objeto Window</h3>
+      </div>
+      <div class="container">
+        <iframe src="iframe1.html" width="200" height="120"></iframe>
+        <iframe src="iframe2.html" width="200" height="120"></iframe>
+        <iframe src="iframe3.html" width="200" height="100"></iframe>
+      </div>
+      <div class="container">
+        <p></p>
+        <button class="btn btn-primary btn-sm" onclick="document_func()">
+          Document
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="frames_func()">
+          Frames
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="open_func()">
+          Open
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="closed_func()">
+          Closed
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="goBack_func()">
+          Back
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="goForward_func()">
+          Forward
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="history_func()">
+          History
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="location_func()">
+          Location
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="name_func()">
+          Name/Opener
+        </button>
+      </div>
+      <p></p>
+      <div class="container">
+        <button class="btn btn-primary btn-sm" onclick="navigator_func()">
+          Navigator
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="outerHeight_func()">
+          OuterHeight
+        </button>
 
-<body>
-  <h1>JavaScript Total</h1>
-  <script src="app.js"></script>
-</body>
+        <button class="btn btn-primary btn-sm" onclick="screen_func()">
+          Screen
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="screenX_func()">
+          ScreenX
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="screenY_func()">
+          ScreenY
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="self_func()">
+          Self
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="top_func()">
+          Top
+        </button>
+      </div>
+    </div>
 
+    <script src="app.js"></script>
+  </body>
 </html>

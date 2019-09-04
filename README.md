@@ -1,9 +1,8 @@
-# JavaScript Total #17
+# JavaScript Total #18
 
-Código usado na vídeo-aula 17 do curso JavaScript Total.
+Código usado na vídeo-aula 18 do curso JavaScript Total.
 
-- O DOM - Document Object Model
-- Mensagens de alerta
+- Propriedade do Objeto Window
 
 ## Links:
 
