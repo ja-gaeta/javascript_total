@@ -2,7 +2,7 @@
 
 Código usado na vídeo-aula 18 do curso JavaScript Total.
 
-- Propriedade do Objeto Window
+- Propriedades do Objeto Window
 
 ## Links:
 
