@@ -1,12 +1,13 @@
-# JavaScript Total #18
+# JavaScript Total #19
 
-Código usado na vídeo-aula 18 do curso JavaScript Total.
+Código usado na vídeo-aula 19 do curso JavaScript Total.
 
-- Propriedades do Objeto Window
+- O Objeto **Document**, Seletores: **getElementById()**
 
 ## Links:
 
 1. Ponto G++ - http://pontogpp.com.br/
 2. GitHub - https://github.com/ja-gaeta/javascript_total
 3. Twitter - https://twitter.com/GaetaJa
-4. Propriedades do Objeto Window - https://developer.mozilla.org/pt-BR/docs/Web/API/Window
+4. Objeto Document - https://developer.mozilla.org/pt-BR/docs/Web/API/Document
+5. getElementById() - https://developer.mozilla.org/pt-BR/docs/Web/API/Document/getElementById

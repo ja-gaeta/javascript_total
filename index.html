@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,74 +10,80 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <title>JavaScript Total</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Lista de Tarefas</title>
   </head>
 
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1 class="display-4">JavaScript Total</h1>
-        <h3>Propriedades do Objeto Window</h3>
-      </div>
+    <div class="overlay">
       <div class="container">
-        <iframe src="iframe1.html" width="200" height="120"></iframe>
-        <iframe src="iframe2.html" width="200" height="120"></iframe>
-        <iframe src="iframe3.html" width="200" height="100"></iframe>
-      </div>
-      <div class="container">
-        <p></p>
-        <button class="btn btn-primary btn-sm" onclick="document_func()">
-          Document
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="frames_func()">
-          Frames
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="open_func()">
-          Open
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="closed_func()">
-          Closed
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="goBack_func()">
-          Back
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="goForward_func()">
-          Forward
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="history_func()">
-          History
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="location_func()">
-          Location
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="name_func()">
-          Name/Opener
-        </button>
-      </div>
-      <p></p>
-      <div class="container">
-        <button class="btn btn-primary btn-sm" onclick="navigator_func()">
-          Navigator
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="outerHeight_func()">
-          OuterHeight
-        </button>
-
-        <button class="btn btn-primary btn-sm" onclick="screen_func()">
-          Screen
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="screenX_func()">
-          ScreenX
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="screenY_func()">
-          ScreenY
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="self_func()">
-          Self
-        </button>
-        <button class="btn btn-primary btn-sm" onclick="top_func()">
-          Top
-        </button>
+        <h1 class="text-center display-4">
+          Lista de Tarefas
+        </h1>
+        <p class="lead text-center">
+          Vamos implementar esta Lista de Tarefas usando JS puro
+        </p>
+        <div class="row">
+          <form class="col-8 mx-auto">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="tarefaInput"
+                placeholder="Nova tarefa"
+              />
+              <span
+                ><button
+                  type="submit"
+                  class="text-uppercase btn btn-success btn-sm"
+                >
+                  Adicionar
+                </button></span
+              >
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <h4 id="titulo-tarefas" class="col-8 mx-auto">Tarefas</h4>
+          <ul class="col-8 mx-auto">
+            <li>
+              Passar no supermercado
+              <a href="#">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li
+              style="text-decoration: line-through; text-decoration-style: double;"
+            >
+              Comprar remédios na farmácia
+              <a href="#">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              Pagar boleto
+              <a href="#">
+                <i class="fa fa-check" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <a class="col-8 mx-auto limpar" href="#">
+            <button
+              type="button"
+              class="text-uppercase btn btn-danger btn-sm btn-block"
+            >
+              Limpar Lista <i class="iBtn fa fa-trash-o"></i>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
 
