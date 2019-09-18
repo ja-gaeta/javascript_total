@@ -2,23 +2,35 @@
 
 // document.getElementById()
 
-console.log(document.getElementById("titulo-tarefas"));
+// console.log(document.getElementById("titulo-tarefas"));
 
 // Acessar partes do elemento
 
-console.log(document.getElementById("titulo-tarefas").id);
-console.log(document.getElementById("titulo-tarefas").className);
+// console.log(document.getElementById("titulo-tarefas").id);
+// console.log(document.getElementById("titulo-tarefas").className);
 
 // Mudar o Estilo
+// const tituloTarefas = document.getElementById("titulo-tarefas");
 
-document.getElementById("titulo-tarefas").style.background = "black";
-document.getElementById("titulo-tarefas").style.color = "white";
-document.getElementById("titulo-tarefas").style.padding = "10px";
-// document.getElementById("titulo-tarefas").style.display = "none";
+// tituloTarefas.style.background = "black";
+// tituloTarefas.style.color = "white";
+// tituloTarefas.style.padding = "10px";
+// tituloTarefas.style.display = "none";
 
 // Mudar o Conteúdo
 
-document.getElementById("titulo-tarefas").textContent = "Relação de Tarefas";
-document.getElementById("titulo-tarefas").innerText = "Minhas Tarefas";
-document.getElementById("titulo-tarefas").innerHTML =
-  '<span style="color: red">Tarefas</span>';
+// tituloTarefas.textContent = "Relação de Tarefas";
+// tituloTarefas.innerText = "Minhas Tarefas";
+// tituloTarefas.innerHTML = '<span style="color: red">Tarefas</span>';
+
+// document.querySelector
+
+console.log(document.querySelector("#titulo-tarefas"));
+console.log(document.querySelector(".limpar"));
+console.log(document.querySelector("li"));
+
+document.querySelector("li").style.color = "red";
+document.querySelector("li:last-child").style.color = "green";
+document.querySelector("li:nth-child(2)").style.textDecoration = "none";
+document.querySelector("li:nth-child(odd)").style.background = "#ccc"; // primeiro impar encontrado
+document.querySelector("li:nth-child(even)").style.background = "#bbb"; // primeiro par encontrado
