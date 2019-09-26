@@ -1,8 +1,8 @@
-# JavaScript Total #20
+# JavaScript Total #21
 
-Código usado na vídeo-aula 20 do curso JavaScript Total.
+Código usado na vídeo-aula 21 do curso JavaScript Total.
 
-- Seletores: **querySelector**
+- Seletores: **getElementsByClassName**
 
 ## Links:
 
@@ -10,5 +10,6 @@ Código usado na vídeo-aula 20 do curso JavaScript Total.
 2. GitHub - https://github.com/ja-gaeta/javascript_total
 3. Twitter - https://twitter.com/GaetaJa
 4. Objeto Document - https://developer.mozilla.org/pt-BR/docs/Web/API/Document
-5. querySelector - https://developer.mozilla.org/pt-BR/docs/Web/API/Document/querySelector
-6. jQuery - https://jquery.com/
+5. getElementsByClassName - https://developer.mozilla.org/pt-BR/docs/Web/API/Document/getElementsByClassName
+6. getElementsByTagName - https://developer.mozilla.org/pt-BR/docs/Web/API/Document/getElementsByTagName
+7. querySelectorAll - https://developer.mozilla.org/pt-BR/docs/Web/API/Document/querySelectorAll

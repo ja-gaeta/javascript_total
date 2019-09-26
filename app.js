@@ -1,36 +1,55 @@
-// Seletores de Elemento Único
+// document.getElementsByClassName()
 
-// document.getElementById()
+// const itens = document.getElementsByClassName("item-lista");
+// console.log(itens);
+// console.log(itens[2]);
+// itens[0].style.color = "red";
+// itens[2].textContent = "Ir ao banco";
 
-// console.log(document.getElementById("titulo-tarefas"));
+// const listaItens = document
+//   .querySelector("ul")
+//   .getElementsByClassName("item-lista");
+// console.log(listaItens);
 
-// Acessar partes do elemento
+// document.getElementsByTagName()
 
-// console.log(document.getElementById("titulo-tarefas").id);
-// console.log(document.getElementById("titulo-tarefas").className);
+let liTags = document.getElementsByTagName("li");
+// console.log(liTags);
+// console.log(liTags[2]);
+// liTags[0].style.color = "red";
+// liTags[2].textContent = "Ir ao banco";
 
-// Mudar o Estilo
-// const tituloTarefas = document.getElementById("titulo-tarefas");
+// Conversão de HTML Collection em Array
 
-// tituloTarefas.style.background = "black";
-// tituloTarefas.style.color = "white";
-// tituloTarefas.style.padding = "10px";
-// tituloTarefas.style.display = "none";
+// liTags = Array.from(liTags);
+// liTags.reverse();
+// console.log(liTags);
 
-// Mudar o Conteúdo
+// liTags.forEach(function(liTags, index) {
+//   console.log(liTags.className);
+//   liTags.textContent = `Item: ${index}`;
+// });
 
-// tituloTarefas.textContent = "Relação de Tarefas";
-// tituloTarefas.innerText = "Minhas Tarefas";
-// tituloTarefas.innerHTML = '<span style="color: red">Tarefas</span>';
+// document.querySelectorAll
 
-// document.querySelector
+// const itens = document.querySelectorAll("ul.lista li.item-lista");
+// console.log(itens);
 
-console.log(document.querySelector("#titulo-tarefas"));
-console.log(document.querySelector(".limpar"));
-console.log(document.querySelector("li"));
+// Não precisa converter, pois é uma NODE LIST
+// itens.forEach(function(item, index) {
+//   item.textContent = `Novo Item: ${index}`;
+// });
 
-document.querySelector("li").style.color = "red";
-document.querySelector("li:last-child").style.color = "green";
-document.querySelector("li:nth-child(2)").style.textDecoration = "none";
-document.querySelector("li:nth-child(odd)").style.background = "#ccc"; // primeiro impar encontrado
-document.querySelector("li:nth-child(even)").style.background = "#bbb"; // primeiro par encontrado
+// Formatando linhas de uma lista, tabela, etc...
+
+const liImpar = document.querySelectorAll("li:nth-child(odd)");
+const liPar = document.querySelectorAll("li:nth-child(even)");
+
+liImpar.forEach(function(li, index) {
+  li.style.background = "#556";
+});
+
+liPar.forEach(function(li, index) {
+  li.style.background = "#fff";
+  li.style.color = "#000";
+});
