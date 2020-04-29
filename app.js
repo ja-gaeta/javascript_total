@@ -1,55 +1,39 @@
-// document.getElementsByClassName()
+// Javascript Total - aula 22
 
-// const itens = document.getElementsByClassName("item-lista");
-// console.log(itens);
-// console.log(itens[2]);
-// itens[0].style.color = "red";
-// itens[2].textContent = "Ir ao banco";
+// Criação de Elementos
+const li = document.createElement("li");
 
-// const listaItens = document
-//   .querySelector("ul")
-//   .getElementsByClassName("item-lista");
-// console.log(listaItens);
+// Adição de classe ao elemento
+li.className = "item-lista";
 
-// document.getElementsByTagName()
+// Adição de id ao elemento
+li.id = "novo-item";
 
-let liTags = document.getElementsByTagName("li");
-// console.log(liTags);
-// console.log(liTags[2]);
-// liTags[0].style.color = "red";
-// liTags[2].textContent = "Ir ao banco";
+// Adição de atributo ao elemento
+li.setAttribute("title", "Novo Item");
 
-// Conversão de HTML Collection em Array
+// Criação de um nó de texto
+const texto = document.createTextNode("Passear com o cachorro");
 
-// liTags = Array.from(liTags);
-// liTags.reverse();
-// console.log(liTags);
+// Adição do nó de texto ao elemento li
+li.appendChild(texto);
 
-// liTags.forEach(function(liTags, index) {
-//   console.log(liTags.className);
-//   liTags.textContent = `Item: ${index}`;
-// });
+// Criação de um elemento âncora
+const link = document.createElement("a");
 
-// document.querySelectorAll
+// Adição de classe ao elemento link
+link.className = "check-item";
 
-// const itens = document.querySelectorAll("ul.lista li.item-lista");
-// console.log(itens);
+// Adição da propriedade href ao link
+link.href = "#";
 
-// Não precisa converter, pois é uma NODE LIST
-// itens.forEach(function(item, index) {
-//   item.textContent = `Novo Item: ${index}`;
-// });
+// Adição do html para o ícone
+link.innerHTML = "<i class='fa fa-check' aria-hidden='true'></i>";
 
-// Formatando linhas de uma lista, tabela, etc...
+// Adição do elemento link ao elemento li
+li.appendChild(link);
 
-const liImpar = document.querySelectorAll("li:nth-child(odd)");
-const liPar = document.querySelectorAll("li:nth-child(even)");
+// Adição do nó li ao nó ul
+document.querySelector("ul.lista").appendChild(li);
 
-liImpar.forEach(function(li, index) {
-  li.style.background = "#556";
-});
-
-liPar.forEach(function(li, index) {
-  li.style.background = "#fff";
-  li.style.color = "#000";
-});
+console.log(li);

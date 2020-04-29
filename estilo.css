@@ -40,10 +40,10 @@ i {
   float: none;
   padding-left: 15px;
 }
-a {
+a.check-item {
   color: white;
 }
-a:hover {
+a.check-item :hover {
   color: tomato;
 }
 a.limpar {
