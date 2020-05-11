@@ -49,3 +49,8 @@ a.check-item :hover {
 a.limpar {
   text-decoration: none;
 }
+
+.done {
+  text-decoration: line-through;
+  text-decoration-style: double;
+}
