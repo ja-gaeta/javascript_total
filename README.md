@@ -2,7 +2,7 @@
 
 Código usado na vídeo-aula 24 do curso JavaScript Total.
 
-- Manipulação de classes CSS e remoção de elementos do DOM
+- Interação com a UI (interface do Usuário)
 
 ## Links:
 
