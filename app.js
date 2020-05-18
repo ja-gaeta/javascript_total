@@ -1,19 +1,15 @@
-// Javascript Total - aula 23
+// Javascript Total - aula 24
 
-// Remoção, Adição e Alternação da classe do elemento
-// --------------------------------------------------
+// Eventos - addEventListener
+// --------------------------
 
-// const segundoLi = document.querySelector("li:nth-child(2)");
-// console.log(segundoLi);
-// segundoLi.classList.remove("done");
-// segundoLi.classList.add("done");
-// segundoLi.classList.toggle("done");
-const elemento = document.querySelectorAll("li");
-elemento[2].classList.toggle("done");
+// document.getElementById("limparBtn").addEventListener("click", function () {
+//   console.log("Salve galera!");
+// });
 
-// Remoção de um elemento
-// ----------------------
+document.getElementById("limparBtn").addEventListener("click", onClick);
 
-// const elemento = document.querySelectorAll("li");
-// elemento[2].remove();
-// elemento[1].remove();
+function onClick(e) {
+  e.target.classList.value = "text-uppercase btn btn-primary btn-sm btn-block";
+  console.log(e.target.classList[2]);
+}

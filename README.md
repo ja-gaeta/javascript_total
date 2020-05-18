@@ -1,6 +1,6 @@
-# JavaScript Total #23
+# JavaScript Total #24
 
-Código usado na vídeo-aula 23 do curso JavaScript Total.
+Código usado na vídeo-aula 24 do curso JavaScript Total.
 
 - Manipulação de classes CSS e remoção de elementos do DOM
 
@@ -10,6 +10,4 @@ Código usado na vídeo-aula 23 do curso JavaScript Total.
 2. GitHub - https://github.com/ja-gaeta/javascript_total
 3. Twitter - https://twitter.com/GaetaJa
 4. Objeto Document - https://developer.mozilla.org/pt-BR/docs/Web/API/Document
-5. :nth-child() - https://developer.mozilla.org/pt-BR/docs/Web/CSS/:nth-child
-6. Manipulação de classes CSS - https://developer.mozilla.org/pt-BR/docs/Web/API/Element/classList
-7. ChildNode.remove() - https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove
+5. addEventListener - https://developer.mozilla.org/pt-BR/docs/Web/API/Element/addEventListener
