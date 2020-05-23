@@ -1,8 +1,8 @@
-# JavaScript Total #24
+# JavaScript Total #25
 
-Código usado na vídeo-aula 24 do curso JavaScript Total.
+- Último exemplo da aula 24 - versão melhorada
 
-- Interação com a UI (interface do Usuário)
+- Eventos da Interface "MouseEvent"
 
 ## Links:
 
@@ -11,3 +11,6 @@ Código usado na vídeo-aula 24 do curso JavaScript Total.
 3. Twitter - https://twitter.com/GaetaJa
 4. Objeto Document - https://developer.mozilla.org/pt-BR/docs/Web/API/Document
 5. addEventListener - https://developer.mozilla.org/pt-BR/docs/Web/API/Element/addEventListener
+6. DOMTokenList - https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList
+7. Relação de Eventos - https://developer.mozilla.org/pt-BR/docs/Web/Events
+8. MouseEvent - https://developer.mozilla.org/pt-BR/docs/Web/API/MouseEvent
