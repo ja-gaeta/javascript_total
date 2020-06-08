@@ -1,37 +1,54 @@
-// Javascript Total - aula 25
+// Javascript Total - aula 26
+// ==========================
 
-// Último exemplo da aula 24 - versão melhorada
+// Acessando campos de entrada e o método preventDefault
+// -----------------------------------------------------
 
-// document.getElementById("limparBtn").addEventListener("click", onClick);
+// const form = document.querySelector("form");
+// const tarefaInput = document.getElementById("tarefaInput");
 
-// function onClick(e) {
-//   const classes = e.target.classList;
-//   classes.replace("btn-danger", "btn-primary");
-//   console.log(classes);
+// form.addEventListener("submit", executaEvento);
+
+// Manipulador de eventos
+// ----------------------
+// function executaEvento(e) {
+//   console.log(`Tipo do Evento: ${e.type}`);
+//   console.log(tarefaInput.value);
+//   tarefaInput.value = "";
+
+//   e.preventDefault();
 // }
 
-// Eventos da Interface "MouseEvent"
+// **************************************************************
 
-const limparBtn = document.getElementById("limparBtn");
+// PROPAGAÇÃO DE EVENTOS
+// Bubbling (borbulhamento)
+// ------------------------
 
-// mousedown
-// limparBtn.addEventListener("mousedown", executaEvento);
+// document.querySelector(".check-item").addEventListener("click", function (e) {
+//   console.log("check-item");
+//   e.stopPropagation();
+// });
 
-// mouseup
-// limparBtn.addEventListener("mouseup", executaEvento);
+// document.querySelector(".item-lista").addEventListener("click", function () {
+//   console.log("item-lista");
+// });
 
-// mouseenter
-// limparBtn.addEventListener("mouseenter", executaEvento);
+// document.querySelector(".lista").addEventListener("click", function () {
+//   console.log("lista");
+// });
 
-// mouseleave
-// limparBtn.addEventListener("mouseleave", executaEvento);
+// Delegation (delegação)
+// ----------------------
 
-const tarefaInput = document.getElementById("tarefaInput");
+// const marcaTarefa = document.querySelector(".check-item");
+const marcaTarefa = document.querySelector(".lista");
 
-// select
-tarefaInput.addEventListener("select", executaEvento);
+marcaTarefa.addEventListener("click", riscaItem);
 
-// Manipulador de Eventos
-function executaEvento(e) {
-  console.log(`Tipo do Evento: ${e.type}`);
+function riscaItem(e) {
+  if (e.target.parentElement.classList.contains("check-item")) {
+    console.log("item riscado do mapa");
+    e.target.parentElement.parentElement.classList.toggle("done");
+  }
 }
