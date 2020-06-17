@@ -1,54 +1,60 @@
-// Javascript Total - aula 26
+// Javascript Total - aula 27
 // ==========================
 
-// Acessando campos de entrada e o método preventDefault
-// -----------------------------------------------------
+// Exemplo da aula passada (aula 26)
+// ---------------------------------
 
-// const form = document.querySelector("form");
-// const tarefaInput = document.getElementById("tarefaInput");
+// const marcaTarefa = document.querySelector(".lista");
 
-// form.addEventListener("submit", executaEvento);
+// marcaTarefa.addEventListener("click", riscaItem);
 
-// Manipulador de eventos
-// ----------------------
-// function executaEvento(e) {
-//   console.log(`Tipo do Evento: ${e.type}`);
-//   console.log(tarefaInput.value);
-//   tarefaInput.value = "";
-
-//   e.preventDefault();
+// function riscaItem(e) {
+//   if (e.target.parentElement.classList.contains("check-item")) {
+//     console.log("item riscado do mapa");
+//     e.target.parentElement.parentElement.classList.toggle("done");
+//   }
 // }
 
-// **************************************************************
+// localStorage e sessionStorage
+// -----------------------------
 
-// PROPAGAÇÃO DE EVENTOS
-// Bubbling (borbulhamento)
-// ------------------------
+// localStorage.setItem("tarefa", "Passar no supermercado");
+// sessionStorage.setItem("tarefa", "Pagar boleto");
 
-// document.querySelector(".check-item").addEventListener("click", function (e) {
-//   console.log("check-item");
-//   e.stopPropagation();
-// });
+// localStorage.clear();
+// sessionStorage.clear();
+// sessionStorage.removeItem("tarefa");
 
-// document.querySelector(".item-lista").addEventListener("click", function () {
-//   console.log("item-lista");
-// });
+// localStorage.setItem("tarefa", "Comprar remédios na farmácia");
 
-// document.querySelector(".lista").addEventListener("click", function () {
-//   console.log("lista");
-// });
+// console.log(localStorage.getItem("tarefa"));
+// console.log(sessionStorage.getItem("tarefa"));
 
-// Delegation (delegação)
-// ----------------------
+// Banco de Dados simples, usando o localStorage
+// ---------------------------------------------
 
-// const marcaTarefa = document.querySelector(".check-item");
-const marcaTarefa = document.querySelector(".lista");
-
-marcaTarefa.addEventListener("click", riscaItem);
-
-function riscaItem(e) {
-  if (e.target.parentElement.classList.contains("check-item")) {
-    console.log("item riscado do mapa");
-    e.target.parentElement.parentElement.classList.toggle("done");
-  }
+function setData(item, valor) {
+  let databaseString = localStorage.getItem("tarefas-db");
+  let databaseObject = databaseString ? JSON.parse(databaseString) : {};
+  databaseObject[item] = valor;
+  localStorage.setItem("tarefas-db", JSON.stringify(databaseObject));
+  return valor;
 }
+
+function getData(item) {
+  let databaseString = localStorage.getItem("tarefas-db");
+  let databaseObject = databaseString
+    ? JSON.parse(localStorage.getItem("tarefas-db"))
+    : {};
+  return databaseObject[item];
+}
+
+setData("appState", {
+  tarefas: [
+    { tarefa: "Passar no supermercado", feito: false },
+    { tarefa: "Comprar remédios na farmácia", feito: true },
+    { tarefa: "Pagar boletoo", feito: false },
+  ],
+});
+
+console.log(getData("appState"));
