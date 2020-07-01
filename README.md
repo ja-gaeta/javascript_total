@@ -1,17 +1,18 @@
-# JavaScript Total #27
+# JavaScript Total #28
 
-## Interface de Armazenamento (Storage API)
+## Projeto Lista de Tarefas (Manipulação do DOM)
 
-- localStorage
-- sessionStorage
+Um aplicativo simples de uma lista de tarefas que permite:
+
+- Adicionar uma nova tarefa à lista;
+- Marcar uma tarefa completada com risco duplo sobre o texto ou desmarcá-la;
+- Limpar a lista de tarefas;
+- Persistir a lista de tarefas e seu estado (riscada ou não) no Local Storage.
 
 ## Links:
 
 1. Ponto G++ - http://pontogpp.com.br/
 2. GitHub - https://github.com/ja-gaeta/javascript_total
 3. Twitter - https://twitter.com/GaetaJa
-4. Storage API - https://developer.mozilla.org/pt-BR/docs/Web/API/Storage
-5. localStorage - https://developer.mozilla.org/pt-BR/docs/Web/API/Window/Window.localStorage
-6. sessionStorage - https://developer.mozilla.org/pt-BR/docs/Web/API/Window/sessionStorage
-7. JSON.parse() - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
-8. JSON.stringify() - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+4. Bootstrap - https://getbootstrap.com/
+5. Font Awesome - https://www.bootstrapcdn.com/fontawesome/

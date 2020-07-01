@@ -1,36 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
     <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="estilo.css" />
-    <title>Lista de Tarefas</title>
+    <title>Tarefas</title>
   </head>
-
   <body>
     <div class="overlay">
       <div class="container">
-        <h1 class="text-center display-4">
-          Lista de Tarefas
-        </h1>
-        <p class="lead text-center">
-          Vamos implementar esta Lista de Tarefas usando JS puro
-        </p>
+        <h1 class="text-center display-4 mt-4">Lista de Tarefas</h1>
         <div class="row">
-          <form class="col-8 mx-auto">
+          <form id="tarefa-form" class="col-8 mx-auto">
             <div class="input-group">
               <input
                 type="text"
@@ -38,55 +30,43 @@
                 id="tarefaInput"
                 placeholder="Nova tarefa"
               />
-              <span
-                ><button
+              <span>
+                <button
                   type="submit"
                   class="text-uppercase btn btn-success btn-sm"
                 >
                   Adicionar
-                </button></span
-              >
+                </button>
+              </span>
             </div>
           </form>
         </div>
         <div class="row">
-          <h4 id="titulo-tarefas" class="col-8 mx-auto">Tarefas</h4>
-          <!-- <div class="item-lista">Teste</div> -->
+          <h4 id="titulo-tarefas" class="col-8 mx-auto mt-2 mb-0">
+            Tarefas
+          </h4>
           <ul class="lista col-8 mx-auto">
-            <li class="item-lista">
-              Passar no supermercado
-              <a class="check-item" href="#">
+            <!-- Esta área será controlada pelo javascript -->
+            <!-- <li class="tarefa">
+              Pagar boleto no banco
+              <a href="#" class="check-tarefa">
                 <i class="fa fa-check" aria-hidden="true"></i>
               </a>
-            </li>
-            <li class="item-lista done">
-              Comprar remédios na farmácia
-              <a class="check-item" href="#">
-                <i class="fa fa-check" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li class="item-lista">
-              Pagar boleto
-              <a class="check-item" href="#">
-                <i class="fa fa-check" aria-hidden="true"></i>
-              </a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="row">
-          <a class="col-8 mx-auto limpar" href="#">
+          <div class="col-8 mx-auto">
             <button
               id="limparBtn"
-              type="button"
-              class="text-uppercase btn btn-danger btn-sm btn-block"
+              class="btn btn-danger btn-sm btn-block text-uppercase"
             >
-              Limpar Lista <i class="iBtn fa fa-trash-o"></i>
+              Limpar Lista
             </button>
-          </a>
+          </div>
         </div>
       </div>
     </div>
-
     <script src="app.js"></script>
   </body>
 </html>
