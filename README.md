@@ -1,6 +1,6 @@
-# JavaScript Total #28
+# JavaScript Total #29
 
-## Projeto Lista de Tarefas (Manipulação do DOM)
+## Projeto Lista de Tarefas (Manipulação do DOM) - Parte 2
 
 Um aplicativo simples de uma lista de tarefas que permite:
 
@@ -16,3 +16,4 @@ Um aplicativo simples de uma lista de tarefas que permite:
 3. Twitter - https://twitter.com/GaetaJa
 4. Bootstrap - https://getbootstrap.com/
 5. Font Awesome - https://www.bootstrapcdn.com/fontawesome/
+6. JavaScript - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
