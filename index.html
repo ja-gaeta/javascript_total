@@ -3,69 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="estilo.css" />
-    <title>Tarefas</title>
+    <title>JSTotal</title>
   </head>
   <body>
-    <div class="overlay">
-      <div class="container">
-        <h1 class="text-center display-4 mt-4">Lista de Tarefas</h1>
-        <div class="row">
-          <form id="tarefa-form" class="col-8 mx-auto">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control form-control-sm"
-                id="tarefaInput"
-                placeholder="Nova tarefa"
-              />
-              <span>
-                <button
-                  type="submit"
-                  class="text-uppercase btn btn-success btn-sm"
-                >
-                  Adicionar
-                </button>
-              </span>
-            </div>
-          </form>
-        </div>
-        <div class="row">
-          <h4 id="titulo-tarefas" class="col-8 mx-auto mt-2 mb-0">
-            Tarefas
-          </h4>
-          <ul class="lista col-8 mx-auto">
-            <!-- Esta área será controlada pelo javascript -->
-            <!-- <li class="tarefa">
-              Pagar boleto no banco
-              <a href="#" class="check-tarefa">
-                <i class="fa fa-check" aria-hidden="true"></i>
-              </a>
-            </li> -->
-          </ul>
-        </div>
-        <div class="row">
-          <div class="col-8 mx-auto">
-            <button
-              id="limparBtn"
-              disabled
-              class="btn btn-danger btn-sm btn-block text-uppercase"
-            >
-              Limpar Lista
-            </button>
-          </div>
-        </div>
+    <div class="container">
+      <div class="mt-4 text-center">
+        <h1 class="display-3">JavaScript Total</h1>
+        <h2 class="display-4">Construtores</h2>
+      </div>
+      <div class="lead mt-5">
+        <p>
+          O JavaScript possui o tipo <code>objeto</code>, que pode ser visto
+          como uma coleção de propriedades e métodos de acesso, podendo
+          inclusive conter outros objetos, permitindo a construção de estruturas
+          extremamente complexas, mas não possui o tipo formal
+          <code>class</code> e, embora o ECMAScript 2015 (ES6) tenha introduzido
+          classes na linguagem, elas são, na verdade, simplificações para as
+          heranças baseadas nos protótipos.
+        </p>
+        <p>
+          Que fique claro, então, que o JavaScript não é uma linguagem orientada
+          a objetos, como Java ou C++ e suas classes fornecem apenas uma maneira
+          mais simples de criar objetos e lidar com herança.
+        </p>
+        <p>
+          Para criarmos vários objetos com a mesma estrutura, usamos uma função
+          construtora de objeto, simplesmente chamada <code>constructor</code>.
+          Uma vez definido o <code>constructor</code>, as instâncias do objeto
+          são criadas com a palavra-reservada <code>new</code>.
+        </p>
       </div>
     </div>
     <script src="app.js"></script>
