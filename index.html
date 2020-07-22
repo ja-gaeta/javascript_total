@@ -15,29 +15,32 @@
     <div class="container">
       <div class="mt-4 text-center">
         <h1 class="display-3">JavaScript Total</h1>
-        <h2 class="display-4">Construtores</h2>
+        <h2 class="display-4">Object.prototype</h2>
       </div>
       <div class="lead mt-5">
         <p>
-          O JavaScript possui o tipo <code>objeto</code>, que pode ser visto
-          como uma coleção de propriedades e métodos de acesso, podendo
-          inclusive conter outros objetos, permitindo a construção de estruturas
-          extremamente complexas, mas não possui o tipo formal
-          <code>class</code> e, embora o ECMAScript 2015 (ES6) tenha introduzido
-          classes na linguagem, elas são, na verdade, simplificações para as
-          heranças baseadas nos protótipos.
+          Praticamente todos os objetos em JavaScript descendem de Object; todos
+          os métodos e propriedades herdados de Object.prototype, embora possam
+          ser sobrescritos (exceto um Objeto com protótipo nulo, i.e.
+          <code>Object.create(null)</code>). Por exemplo, outros protótipos
+          construtores sobrescrevem a propriedade construtora e fornece seus
+          próprios métodos <code>toString()</code>.
         </p>
         <p>
-          Que fique claro, então, que o JavaScript não é uma linguagem orientada
-          a objetos, como Java ou C++ e suas classes fornecem apenas uma maneira
-          mais simples de criar objetos e lidar com herança.
+          Modificações no Objeto protótipo do objeto são propagadas a
+          <strong>todos</strong> os objetos através do encadeamento de
+          protótipos, a menos que as propriedades e métodos submetidos às
+          mudanças sejam sobrescritos mais além no encadeamento dos protótipos.
+          Este recurso oferece um mecanismo muito poderoso, embora seja perigoso
+          para <em>sobrescrita</em> e <em>extensão</em> de objetos.
         </p>
-        <p>
-          Para criarmos vários objetos com a mesma estrutura, usamos uma função
-          construtora de objeto, simplesmente chamada <code>constructor</code>.
-          Uma vez definido o <code>constructor</code>, as instâncias do objeto
-          são criadas com a palavra-reservada <code>new</code>.
-        </p>
+        <div class="alert alert-info" role="alert">
+          Fonte:
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype"
+            >MDN web docs</a
+          >.
+        </div>
       </div>
     </div>
     <script src="app.js"></script>
