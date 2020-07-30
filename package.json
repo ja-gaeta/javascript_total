@@ -1,0 +1,23 @@
+{
+  "name": "jstotal",
+  "version": "1.0.0",
+  "description": "- Instalação e configuração do ESlint",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ja-gaeta/javascript_total.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ja-gaeta/javascript_total/issues"
+  },
+  "homepage": "https://github.com/ja-gaeta/javascript_total#readme",
+  "devDependencies": {
+    "eslint": "^7.5.0"
+  }
+}
