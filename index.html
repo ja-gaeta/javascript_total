@@ -15,29 +15,20 @@
     <div class="container">
       <div class="mt-4 text-center">
         <h1 class="display-3">JavaScript Total</h1>
-        <h2 class="display-4">Object.prototype</h2>
+        <h2 class="display-4">Herança Prototipada</h2>
       </div>
       <div class="lead mt-5">
         <p>
-          Praticamente todos os objetos em JavaScript descendem de Object; todos
-          os métodos e propriedades herdados de Object.prototype, embora possam
-          ser sobrescritos (exceto um Objeto com protótipo nulo, i.e.
-          <code>Object.create(null)</code>). Por exemplo, outros protótipos
-          construtores sobrescrevem a propriedade construtora e fornece seus
-          próprios métodos <code>toString()</code>.
-        </p>
-        <p>
-          Modificações no Objeto protótipo do objeto são propagadas a
-          <strong>todos</strong> os objetos através do encadeamento de
-          protótipos, a menos que as propriedades e métodos submetidos às
-          mudanças sejam sobrescritos mais além no encadeamento dos protótipos.
-          Este recurso oferece um mecanismo muito poderoso, embora seja perigoso
-          para <em>sobrescrita</em> e <em>extensão</em> de objetos.
+          Até agora vimos alguma herança em ação — vimos como funcionam as
+          cadeias de protótipos e como os membros são herdados subindo em uma
+          cadeia. Mas principalmente isso envolveu funções internas do
+          navegador. Como criamos um objeto em JavaScript que herda de outro
+          objeto?
         </p>
         <div class="alert alert-info" role="alert">
           Fonte:
           <a
-            href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype"
+            href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Objetos/Heran%C3%A7a"
             >MDN web docs</a
           >.
         </div>

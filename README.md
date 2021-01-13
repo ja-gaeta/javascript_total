@@ -1,8 +1,8 @@
-# JavaScript Total #32
+# JavaScript Total #33
 
-## ESlint
+## Orientação a Objetos: Herança Prototipada
 
-- Instalação e configuração do ESlint
+- Implementação da funcionalidade de herança no JavaScript usando o protótipo de objetos.
 
 ## Links:
 
@@ -15,3 +15,4 @@
 7.  Herança e cadeia de protótipos - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain
 8.  NodeJS - https://nodejs.org/en/
 9.  ESlint - https://eslint.org/
+10. Herança Prototipada - https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Objetos/Heran%C3%A7a

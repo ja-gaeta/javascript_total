@@ -1,42 +1,67 @@
-// Object.prototype
-// ================
+// Construtor
+// ----------
 
-function Moto(marca, modelo, ano) {
+function Veiculo(marca, modelo, ano) {
   this.marca = marca;
   this.modelo = modelo;
   this.ano = ano;
-
-  // this.moto = function () {
-  //   return this.marca + " " + this.modelo + " " + this.ano;
-  // };
 }
 
-// Retorna info completa
-Moto.prototype.moto = function () {
-  return this.marca + ' ' + this.modelo + ' ' + this.ano;
+// Retorna informação completa do veículo
+// --------------------------------------
+
+Veiculo.prototype.info = function () {
+  return `
+    Marca: ${this.marca}
+    Modelo: ${this.modelo}
+    Ano: ${this.ano}
+  `;
 };
 
-// Retorna apenas o modelo
-Moto.prototype.getModelo = function () {
-  return this.modelo;
-};
+// Instanciação dos objetos
+// ------------------------
 
-// Ajusta uma propriedade
-Moto.prototype.setModelo = function (novoModelo) {
-  this.modelo = novoModelo;
-};
+const minhaMoto = new Veiculo('Triumph', 'Tiger 800 XRXL', 2018);
+const outraMoto = new Veiculo('BMW', 'R 1250 GS Adventure', 2020);
 
-// Sobrescreve hasOwnProperty
-Moto.prototype.hasOwnProperty = function () {
-  return true;
-};
+console.log(minhaMoto.info());
+console.log(outraMoto.info());
 
-const minhaMoto = new Moto('Triumph', 'Tiger 800 XRXL', 2018);
-console.log(minhaMoto);
-console.log(minhaMoto.moto());
-console.log(minhaMoto.getModelo());
-minhaMoto.setModelo('Bonneville T120');
-console.log(minhaMoto.getModelo());
-console.log(Object.prototype.hasOwnProperty.call(minhaMoto, 'marca'));
-console.log(Object.prototype.hasOwnProperty.call(minhaMoto, 'valor'));
-console.log(Object.prototype.hasOwnProperty.call(minhaMoto, 'getModelo'));
+// Construtor para Motos
+// ---------------------
+
+function Moto(marca, modelo, ano, abs) {
+  Veiculo.call(this, marca, modelo, ano);
+   this.abs = abs;
+}
+
+// Herança dos métodos do protótipo Veiculo
+// ----------------------------------------
+
+Moto.prototype = Object.create(Veiculo.prototype);
+
+// Forçar Moto.prototype retornar Moto()
+// -------------------------------------
+
+Moto.prototype.constructor = Moto;
+
+// Instanciação de uma moto
+// ------------------------
+
+const moto1 = new Moto('BMW', 'R 1200 GS', '2016', 'sim');
+
+console.log(moto1);
+
+// Retorna informações para Moto
+// -----------------------------
+
+Moto.prototype.info = function() {
+  return `
+    Marca: ${this.marca}
+    Modelo: ${this.modelo}
+    Ano: ${this.ano}
+    ABS: ${this.abs}
+  `
+}
+
+console.log(moto1.info());
